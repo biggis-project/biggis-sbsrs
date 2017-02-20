@@ -5,4 +5,14 @@ services:
     hostname: sbsrs
     ports:
       - "9000:9000"
-      - "9092"
+    environment:
+      KAFKA_SERVER: "biggiskafka_kafka_1:9092"
+    external_links:
+      - "biggiskafka_kafka_1"
+    networks:
+      - "default"
+      - "biggiskafka_default"
+
+networks:
+  biggiskafka_default:
+    external: true

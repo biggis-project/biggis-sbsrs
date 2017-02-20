@@ -43,4 +43,4 @@ ADD docker-entrypoint.sh $TARGET
 
 EXPOSE 9000
 
-CMD ["docker-entrypoint.sh", "sh", "-c"]
+CMD ["docker-entrypoint.sh"]
