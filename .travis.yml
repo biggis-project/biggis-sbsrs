@@ -5,7 +5,7 @@ services:
 
 env:
   global:
-    - IMG=biggis/sbsrs:0.2.2
+    - IMG=biggis/sbsrs:0.2.3
 
 install:
   #login to dockerhub

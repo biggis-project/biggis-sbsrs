@@ -32,7 +32,7 @@ WORKDIR $TARGET
 RUN \
   set -x && \
   apk --update add --virtual build-dependencies curl && \
-  curl -L -o sbsrs.jar https://github.com/biggis-project/sensebox-station/releases/download/SBSRS-v01/sensebox-simple-rest-server-assembly-${SBSRS_VERSION}.jar && \
+  curl -L -o sbsrs.jar https://github.com/biggis-project/sensebox-station/releases/download/SBSRS-v02/sensebox-simple-rest-server-assembly-${SBSRS_VERSION}.jar && \
   dd if=/dev/random bs=32 count=1 | base64 > sbsrs.secret && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/*
