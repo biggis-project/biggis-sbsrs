@@ -4,7 +4,7 @@ services:
     image: biggis/sbsrs:0.1
     hostname: sbsrs
     ports:
-      - "9000:9000"
+      - "9100:9100"
     environment:
       KAFKA_SERVER: "biggiskafka_kafka_1:9092"
 # https://blog.virtualzone.de/2016/09/docker-compose-link-containers-outside-compose-file-using-external_links.html

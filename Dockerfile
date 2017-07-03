@@ -41,6 +41,6 @@ ENV PATH $PATH:$TARGET
 
 ADD docker-entrypoint.sh $TARGET
 
-EXPOSE 9000
+EXPOSE 9100
 
 CMD ["docker-entrypoint.sh"]
