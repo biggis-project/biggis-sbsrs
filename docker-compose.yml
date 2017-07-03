@@ -7,6 +7,7 @@ services:
       - "9000:9000"
     environment:
       KAFKA_SERVER: "biggiskafka_kafka_1:9092"
+# https://blog.virtualzone.de/2016/09/docker-compose-link-containers-outside-compose-file-using-external_links.html
     external_links:
       - "biggiskafka_kafka_1"
     networks:
