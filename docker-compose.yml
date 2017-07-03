@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   sbsrs:
-    image: biggis/sbsrs:0.1
+    image: biggis/sbsrs:0.2
     hostname: sbsrs
     ports:
       - "9100:9100"
